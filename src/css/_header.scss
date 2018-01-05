@@ -25,6 +25,10 @@
   color: #333 !important;
   cursor: pointer;
   transition: color 1s ease-out;
+  margin-left: 0.1em !important;
+  //text-align: center;
+
+  justify-content: center;
 }
 
 .inner .icon:hover {
@@ -42,3 +46,4 @@
 .active .icon:hover {
   color: black !important;
 }
+
