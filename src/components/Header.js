@@ -9,7 +9,7 @@ import { portofolioContent } from "../data/data";
 
 export const Header = props => {
   return (
-    <div className="card image__container-main">
+    <div className="image__container-main">
       <div className="icon__container">
         <img className="ui user avatar image" alt="finye" src={img} />
       </div>

@@ -2,12 +2,18 @@ export const portofolioContent = [
   {
     id: 1,
     title: "EDUCATION",
-    description: `Once up on a time in a far, far, far away land called Ethiopia the
-    journey of this mysterious... Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-    labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat `,
+    description: [
+      {
+        diploma: "Bachelor degree",
+        field_of_study: "Media engineering",
+        academy: "Metropolia University of applied sciences"
+      },
+      {
+        diploma: "Bachelor degree of art",
+        field_of_study: "Music composition and performance.",
+        academy: "Yared School of Music, AAU."
+      }
+    ],
     path: "/education",
     component: "Education",
     iconClassName: "student large icon__size-adj"
@@ -15,12 +21,23 @@ export const portofolioContent = [
   {
     id: 2,
     title: "SKILLS",
-    description: `Once up on a time in a far, far, far away land called Ethiopia the
-    journey of this mysterious... Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-    labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat `,
+    description: [
+      {
+        set_of_skills: "JavaScript, CSS/SASS, HTML, jQuery",
+        "libs & frameworks": "ReactJS,Angular/AngulaJS, SailsJS, Cordova",
+        "Build tools": "Browserify, Gulp, Webpack",
+        additional: "Music Composition and arrangements",
+        projects: {
+          thesis_project: "Säbämestari mobile app",
+          school_project: "ShutApp, a chat app made with sailJS"
+        },
+        currently_learning: "Functional programming",
+        links: {
+          github: "https://github.com/boochoo",
+          linkedin: "https://www.linkedin.com/in/ermias-asmelash-54b640aa/"
+        }
+      }
+    ],
     path: "/skills",
     component: "Skills",
     iconClassName: "certificate large icon__size-adj"
@@ -28,12 +45,26 @@ export const portofolioContent = [
   {
     id: 3,
     title: "EXPERIENCES",
-    description: `Once up on a time in a far, far, far away land called Ethiopia the
-    journey of this mysterious... Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-    labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat `,
+    description: [
+      {
+        status: "Currently working",
+        where: "Apprix Oy",
+        what: "Frontend Developer",
+        year: "Dec, 2016 - present"
+      },
+      {
+        status: "Thesis project",
+        where: "Game Refinery",
+        what: "Data visualisation based project with AngularJS",
+        year: "Aug, 2016 - Dec 2016"
+      },
+      {
+        status: "Internship",
+        where: "Metropolia UAS",
+        what: "Finnish floorball Association cross platform mobile app",
+        year: "Aug, 2015 - Jan 2016"
+      }
+    ],
     path: "/experience",
     component: "Experience",
     iconClassName: "computer large icon__size-adj"
@@ -41,12 +72,16 @@ export const portofolioContent = [
   {
     id: 4,
     title: "CONTACT",
-    description: `Once up on a time in a far, far, far away land called Ethiopia the
-    journey of this mysterious... Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-    labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat `,
+    description: [
+      {
+        greeting: "Hi there!",
+        greeter: "Ermi here",
+        occupation: "Frontend developer",
+        main_profession: "JavaScript Enthusiast",
+        origin: "Ethiopia",
+        resides_in: "Helsinki, Finland"
+      }
+    ],
     path: "/contact",
     component: "Contact",
     iconClassName: "mail large icon__size-adj"
