@@ -24,7 +24,7 @@ export const Header = props => {
           </NavLink>
         </div>
         {portofolioContent.map((i, index) => (
-          <div className="inner" key={i.id}>
+          <div className="inner" desc={i.description} key={i.id}>
             <NavLink to={{ pathname: `${i.path}` }}>
               <Icon className={i.iconClassName} />
             </NavLink>

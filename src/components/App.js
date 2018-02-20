@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/* import React, { Component } from "react";
 import { render } from "react-dom";
 
 //import "../css/App.css";
@@ -11,3 +11,4 @@ export default class App extends Component {
 }
 
 render(<App />, document.getElementById("root"));
+ */

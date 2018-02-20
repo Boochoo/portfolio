@@ -26,6 +26,6 @@ render(
       <Route path="/education" component={Education} />
     </div>
   </Router>,
-  document.getElementById("root")
+  root
 );
 registerServiceWorker();
