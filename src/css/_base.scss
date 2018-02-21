@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace, sans-serif !important;
   font-style: normal;
   font-weight: 400;
   font-size: 14.5px !important;
@@ -21,7 +21,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga" on;
+  -moz-font-feature-settings: 'liga' on;
 }
 
 img {
@@ -42,7 +42,7 @@ img {
   transform: translate(0, -50%);
   right: 1.5em;
   width: 7%;
-  display: block;
+  display: none;
 }
 
 .cards {
@@ -51,21 +51,23 @@ img {
   padding: 0;
 }
 
-.cards__item {
- // display: flex;
-  padding: 1rem;
-  margin: 0 auto;
+/* .cards__item {
+  // display: flex;
+  padding: 0 3.5rem;
+  margin: 2em auto;
   flex: 0 0 47.5%;
-}
+} */
 
 .card {
-  background-color: white;
+  background-color: #f5f5f5;
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   overflow: hidden;
   flex: 1;
+  margin: 2em;
+  padding: 2em;
   //width: 47vw;
 }
 
@@ -98,7 +100,7 @@ img {
 }
 
 .card__image::before {
-  content: "";
+  content: '';
   display: block;
   padding-top: 56.25%;
 }
@@ -156,11 +158,6 @@ img {
   align-items: center;
 }
 
-/* .description-icons {
-  transform: translate(100%, 0);
-  left: 50%;
-} */
-
 .user__header {
   margin: 0 auto;
 }
@@ -188,7 +185,9 @@ i.user {
 .university {
   color: #7b1fa2;
 }
-
+.info {
+  color: dodgerblue;
+}
 .trophy,
 .certificate {
   color: goldenrod;
@@ -196,6 +195,9 @@ i.user {
 
 .computer {
   color: #00796b;
+}
+.student {
+  color: #9f039f;
 }
 
 .info.circle {
@@ -212,28 +214,17 @@ ul a:hover {
   color: #333;
 }
 
-.card:hover {
-  //background-color: lightgrey;
-  /*  transform: scale(1.05);
-  background: #fff;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-}
-
 .Header__content:hover {
   background-color: #fff;
 }
 
 .inner .computer.large,
 .inner .mail.large {
-  font-size: 2.75em !important;
-  margin-top: 0.4em !important;
-  margin-left: 0.25em !important;
+  //font-size: 2.7em !important;
 }
 
 .inner .student.large {
-  margin-left: 0.05em !important;
+  // margin-left: 0.05em !important;
 }
 
 .shade {
@@ -242,7 +233,7 @@ ul a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, 0.4);
   height: 0;
   -webkit-transition: 175ms ease-in-out height;
   transition: 175ms ease-in-out height;
@@ -250,7 +241,7 @@ ul a:hover {
 
 .shade:hover {
   height: 100% !important;
-  background-color: rgba(255, 50, 50, .7) !important;
+  background-color: rgba(255, 50, 50, 0.7) !important;
 }
 
 pre {
@@ -260,9 +251,21 @@ pre {
   width: 100%;
   text-align: left;
   white-space: pre-wrap;
-  font-family: "Courier New", Courier, monospace, sans-serif;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
   font-size: 1.25rem;
-  color: #1569C7;
-  background: #eee;
+  color: #1569c7;
+  // background: #eee;
+  word-break: break-all;
+}
+
+.skills__list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.info__link,
+.info__link:hover {
+  color: #1569c7;
   word-break: break-all;
 }

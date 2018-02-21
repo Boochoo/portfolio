@@ -25,7 +25,7 @@
   color: #333 !important;
   cursor: pointer;
   transition: color 1s ease-out;
-  margin-left: 0.1em !important;
+  // margin-left: 0.1em !important;
   //text-align: center;
 
   justify-content: center;
@@ -36,13 +36,12 @@
   //font-size: 4.5em !important;
 }
 
-.active {
-  background-color: #ffe259 !important;
-  border-radius: 100%;
-  border: solid #ffe259 1px;
+.active .icon {
+  color: #ffe259 !important;
+  //border-radius: 100%;
+  // border: solid #ffe259 1px;
 }
 
 .active .icon:hover {
-  color: black !important;
+  color: #ffe259 !important;
 }
-

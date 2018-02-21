@@ -1,5 +1,5 @@
-import React from "react";
-import { Header } from "../components/Header";
+import React from 'react';
+import { Header } from '../components/Header';
 
 export default class Education extends React.Component {
   render() {
@@ -9,14 +9,36 @@ export default class Education extends React.Component {
         <div className="card Header__content">
           <div className="card__content">
             <div className="card__title">Education</div>
-            <p className="card__text card__text-group">
-                Once up on a time in a far, far, far away land called Ethiopia
-                the journey of this mysterious... Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat
-            </p>
+            <ul className="skills__list">
+              <li className="card__text card__text-group">
+                Bachelor of Art
+                <ul>
+                  <li className="card__text card__text-group">
+                    Music composition and performance.
+                  </li>
+                </ul>
+                <ul>
+                  <li className="card__text card__text-group">
+                    From Yared School of Music, AAU.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul className="skills__list">
+              <li className="card__text card__text-group">
+                Bachelory of Engineering
+                <ul>
+                  <li className="card__text card__text-group">
+                    Media Engineering
+                  </li>
+                </ul>
+                <ul>
+                  <li className="card__text card__text-group">
+                    From Metropolia University of applied sciences
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
