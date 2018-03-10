@@ -1,1 +1,1 @@
-Finnan Solomon's Portofolio.
+Portfolio.
